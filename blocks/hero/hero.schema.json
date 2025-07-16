@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Hero Block",
+  "description": "Main hero section with picture and title",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Main hero title",
+      "x-eds-selector": "h1"
+    },
+    "picture": {
+      "type": "object",
+      "x-eds-selector": "picture",
+      "properties": {
+        "src": {
+          "type": "string",
+          "format": "uri",
+          "x-eds-selector": "img",
+          "x-eds-attribute": "src"
+        },
+        "alt": {
+          "type": "string",
+          "x-eds-selector": "img",
+          "x-eds-attribute": "alt"
+        },
+        "source": {
+          "type": "array",
+          "description": "All source elements with their srcset values",
+          "x-eds-selector": "source",
+          "items": {
+            "type": "object",
+            "properties": {
+              "srcSet": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "src",
+        "alt"
+      ]
+    }
+  },
+  "required": [
+    "picture",
+    "title"
+  ]
+}
