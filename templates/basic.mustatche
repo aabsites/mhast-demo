@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "title": "{{hero.title}}",
+    "image": "{{hero.image}}"
+  },
+  "cards": [
+    {{#cards}}
+    {
+      "title": "{{title}}",
+      "image": "{{image}}",
+      "description": "{{description}}"
+    }{{^last}},{{/last}}
+    {{/cards}}
+  ]
+}
