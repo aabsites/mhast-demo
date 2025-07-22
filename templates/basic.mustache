@@ -1,15 +1,26 @@
 {
+  "heading": "{{children.1.children.1.children.0.children.0.children.0.children.0.value}}",
   "hero": {
-    "title": "{{hero.title}}",
-    "image": "{{hero.image}}"
+    "image": {
+      "src": "{{children.1.children.1.children.0.children.1.children.0.children.0.children.0.children.0.children.3.properties.src}}",
+      "alt": "{{children.1.children.1.children.0.children.1.children.0.children.0.children.0.children.0.children.3.properties.alt}}",
+      "width": {{children.1.children.1.children.0.children.1.children.0.children.0.children.0.children.0.children.3.properties.width}},
+      "height": {{children.1.children.1.children.0.children.1.children.0.children.0.children.0.children.0.children.3.properties.height}}
+    },
+    "title": "{{children.1.children.1.children.0.children.1.children.0.children.0.children.1.children.0.value}}"
   },
   "cards": [
-    {{#cards}}
+   {{#children.1.children.1.children.0.children.6.children}}
     {
-      "title": "{{title}}",
-      "image": "{{image}}",
-      "description": "{{description}}"
-    }{{^last}},{{/last}}
-    {{/cards}}
+      "image": {
+        "src": "{{children.0.children.0.children.3.properties.src}}",
+        "alt": "{{children.0.children.0.children.3.properties.alt}}",
+        "width": {{children.0.children.0.children.3.properties.width}},
+        "height": {{children.0.children.0.children.3.properties.height}}
+      },
+      "title": "{{children.1.children.0.children.0.children.0.value}}",
+      "text": "{{children.1.children.1.children.0.value}}"
+    }{{^@last}},{{/@last}}
+   {{/children.1.children.1.children.0.children.6.children}}
   ]
 }
