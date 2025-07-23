@@ -81,7 +81,6 @@ const setupUEEventHandlers = () => {
       const blockEl = element.parentElement?.closest('.block[data-aue-resource]') || element?.closest('.block[data-aue-resource]');
       if (blockEl) {
         const block = blockEl.getAttribute('data-aue-model');
-        const index = element.getAttribute('data-slide-index');
 
         switch (block) {
           case 'accordion':
