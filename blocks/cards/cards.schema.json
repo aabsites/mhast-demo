@@ -14,7 +14,7 @@
           "title": {
             "type": "string",
             "description": "Card title from strong text",
-            "x-eds-selector": "strong"
+            "x-eds-selector": "strong, a"
           },
           "description": {
             "type": "string",
