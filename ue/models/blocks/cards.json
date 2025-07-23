@@ -45,7 +45,8 @@
           "name": "div:nth-child(2)",
           "value": "",
           "label": "Text",
-          "valueType": "string"
+          "valueType": "string",
+          "required": true
         }
       ]
     }
